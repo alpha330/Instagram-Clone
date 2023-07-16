@@ -25,7 +25,7 @@ SECRET_KEY = 'k1l8gsqp&&glb@%qafi26xb-y4%xjf60g)2!6bspqc+@xjl7me'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['instagram-clone-d.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = [ '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    "crispy_bootstrap4",
     
     #own
     'post',
@@ -150,3 +151,7 @@ LOGOUT_REDIRECT_URL = 'sign-in'
 LOGIN_URL = 'sign-in'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
